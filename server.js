@@ -9,7 +9,7 @@ app.use(express.json())
 connectDB();
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
-app.use('/api//auth', authRoutes)
+app.use('/api/auth', authRoutes)
 app.use("/api/users", userRoutes);
 
 
