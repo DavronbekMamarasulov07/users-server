@@ -9,8 +9,8 @@ app.use(express.json())
 connectDB();
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
-app.use('/auth', authRoutes)
-app.use("/users", userRoutes);
+app.use('/api//auth', authRoutes)
+app.use("/api/users", userRoutes);
 
 
 app.get('/', (req, res) => {
