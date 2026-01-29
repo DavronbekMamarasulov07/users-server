@@ -12,7 +12,7 @@ export const authRoutes = express.Router();
 
 /**
  * @swagger
- * /auth/register:
+ *  /api/auth/register:
  *   post:
  *     summary: Yangi foydalanuvchi ro'yhatdan o'tishi
  *     tags: [Auth]
@@ -50,7 +50,7 @@ authRoutes.post("/register", register);
 
 /**
  * @swagger
- * /auth/login:
+ * /api/auth/login:
  *   post:
  *     summary: Foydalanuvchi tizimga kirishi
  *     tags: [Auth]

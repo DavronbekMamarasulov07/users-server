@@ -52,7 +52,7 @@ const userRoutes = Router();
 
 /**
  * @swagger
- * /users:
+ *  /api/users:
  *   post:
  *     summary: Yangi foydalanuvchi yaratish
  *     tags: [Users]
@@ -90,7 +90,7 @@ userRoutes.post("/", createUser);
 
 /**
  * @swagger
- * /users:
+ *  /api/users:
  *   get:
  *     summary: Barcha foydalanuvchilarni olish
  *     tags: [Users]
@@ -106,7 +106,7 @@ userRoutes.get("/", authMiddleware, getAllUsers);
 
 /**
  * @swagger
- * /users/me:
+ *  /api/users/me:
  *   get:
  *     summary: Login qilgan foydalanuvchi ma'lumotini olish
  *     tags: [Users]
@@ -120,7 +120,7 @@ userRoutes.get("/me", authMiddleware, getMe);
 
 /**
  * @swagger
- * /users/change-role/{id}:
+ *  /api/users/change-role/{id}:
  *   put:
  *     summary: Foydalanuvchi rolini o'zgartirish
  *     tags: [Users]
@@ -165,7 +165,7 @@ userRoutes.put(
 
 /**
  * @swagger
- * /users/change-password:
+ *  /api/users/change-password:
  *   put:
  *     summary: Foydalanuvchi parolini o'zgartirish
  *     tags: [Users]
@@ -197,7 +197,7 @@ userRoutes.put("/change-password", authMiddleware, changePassword);
 
 /**
  * @swagger
- * /users/{id}:
+ *  /api/users/{id}:
  *   put:
  *     summary: Foydalanuvchi ma'lumotlarini yangilash
  *     tags: [Users]
@@ -233,7 +233,7 @@ userRoutes.put("/:id", authMiddleware, updateUser);
 
 /**
  * @swagger
- * /users/{id}:
+ *  /api/users/{id}:
  *   delete:
  *     summary: Foydalanuvchini o'chirish
  *     tags: [Users]
